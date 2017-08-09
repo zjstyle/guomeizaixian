@@ -1,0 +1,230 @@
+[
+	{
+		"recm": [
+			{
+				"tit": "618嗨购",
+				"link": "#"
+			}, {
+				"tit": "家电馆",
+				"link": "#"
+			}, {
+				"tit": "乡镇专卖店",
+				"link": "#"
+			}, {
+				"tit": "家电服务",
+				"link": "#"
+			}, {
+				"tit": "家电企业购",
+				"link": "#"
+			}
+		],
+		"subNavLists": [
+			{
+				"subNavTit": "电视",
+				"subNavList": [
+					"曲面电视",
+					"超薄电视",
+					"HDR电视"
+				]
+			},
+			{
+				"subNavTit": "空调",
+				"subNavList": [
+					"壁挂式空调",
+					"柜式空调",
+					"中央空调"
+				]
+			},
+			{
+				"subNavTit": "洗衣机",
+				"subNavList": [
+					"滚筒洗衣机",
+					"波轮洗衣机",
+					"迷你洗衣机"
+				]
+			}
+		],
+		"tjImg": [
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg"
+		],
+		"tjImgBig": [
+			"imgs/tj02.jpg",
+			"imgs/tj02.jpg"
+		]
+	},
+	{
+		"recm": [
+			{
+				"tit": "608嗨购",
+				"link": "#"
+			}, {
+				"tit": "家电馆",
+				"link": "#"
+			}, {
+				"tit": "乡镇专卖店",
+				"link": "#"
+			}, {
+				"tit": "家电服务",
+				"link": "#"
+			}, {
+				"tit": "家电企业购",
+				"link": "#"
+			}
+		],
+		"subNavLists": [
+			{
+				"subNavTit": "电视",
+				"subNavList": [
+					"曲面电视",
+					"超薄电视",
+					"HDR电视"
+				]
+			},
+			{
+				"subNavTit": "空调",
+				"subNavList": [
+					"壁挂式空调",
+					"柜式空调",
+					"中央空调"
+				]
+			},
+			{
+				"subNavTit": "洗衣机",
+				"subNavList": [
+					"滚筒洗衣机",
+					"波轮洗衣机",
+					"迷你洗衣机"
+				]
+			}
+		],
+		"tjImg": [
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg"
+		],
+		"tjImgBig": [
+			"imgs/tj02.jpg",
+			"imgs/tj02.jpg"
+		]
+	},
+	{
+		"recm": [
+			{
+				"tit": "601嗨购",
+				"link": "#"
+			}, {
+				"tit": "家电馆",
+				"link": "#"
+			}, {
+				"tit": "乡镇专卖店",
+				"link": "#"
+			}, {
+				"tit": "家电服务",
+				"link": "#"
+			}, {
+				"tit": "家电企业购",
+				"link": "#"
+			}
+		],
+		"subNavLists": [
+			{
+				"subNavTit": "电视",
+				"subNavList": [
+					"曲面电视",
+					"超薄电视",
+					"HDR电视"
+				]
+			},
+			{
+				"subNavTit": "空调",
+				"subNavList": [
+					"壁挂式空调",
+					"柜式空调",
+					"中央空调"
+				]
+			},
+			{
+				"subNavTit": "洗衣机",
+				"subNavList": [
+					"滚筒洗衣机",
+					"波轮洗衣机",
+					"迷你洗衣机"
+				]
+			}
+		],
+		"tjImg": [
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg"
+		],
+		"tjImgBig": [
+			"imgs/tj02.jpg",
+			"imgs/tj02.jpg"
+		]
+	},
+	{
+		"recm": [
+			{
+				"tit": "618嗨购",
+				"link": "#"
+			}, {
+				"tit": "家电馆",
+				"link": "#"
+			}, {
+				"tit": "乡镇专卖店",
+				"link": "#"
+			}, {
+				"tit": "家电服务",
+				"link": "#"
+			}, {
+				"tit": "家电企业购",
+				"link": "#"
+			}
+		],
+		"subNavLists": [
+			{
+				"subNavTit": "电视",
+				"subNavList": [
+					"曲面电视",
+					"超薄电视",
+					"HDR电视"
+				]
+			},
+			{
+				"subNavTit": "空调",
+				"subNavList": [
+					"壁挂式空调",
+					"柜式空调",
+					"中央空调"
+				]
+			},
+			{
+				"subNavTit": "洗衣机",
+				"subNavList": [
+					"滚筒洗衣机",
+					"波轮洗衣机",
+					"迷你洗衣机"
+				]
+			}
+		],
+		"tjImg": [
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg",
+			"imgs/tj01.jpg"
+		],
+		"tjImgBig": [
+			"imgs/tj02.jpg",
+			"imgs/tj02.jpg"
+		]
+	}
+]

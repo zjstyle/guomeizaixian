@@ -1,0 +1,78 @@
+@charset "utf-8";
+.con{width: 1200px;margin: 0 auto;}
+header{background: #f8f8f8; height: 30px;}
+header #top .top-l {float: left;}
+header #top .top-l img{margin-top: 6px;float: left;}
+header #top .top-l a{display: block; float: left;margin:0 5px ;line-height: 30px;color: #888888;}
+/*header #top .top-l a.te{background: url(../images/t2.png) no-repeat right; padding-right: 10px;}*/
+header #top .top-l span{display: block;float: left;line-height: 30px;color: #e6e6e6;}
+header #top .top-r {float: right;}
+header #top .top-r a{display: block; float: left;margin:0 5px ;line-height: 30px;color: #888888;}
+header #top .top-r i{display: block; float: left;line-height: 30px;color: red;}
+header #top .top-r span{display: block;float: left;line-height: 30px;color: #e6e6e6;}
+/*header #top .top-r a.te{background: url(../images/t2.png) no-repeat right; padding-right: 10px;}*/
+
+
+#banner{height: 307px;background: url(../images/banner.jpg) no-repeat;margin: 0 auto;}
+
+#product h5 {
+  padding-top: 25px;
+  text-align: left; }
+  #product h5 span {
+    width: 3px;
+    height: 20px;
+    background: #fe9901;
+    display: inline-block;
+    vertical-align: middle; }
+  #product h5 i {
+    font: 700 18px/20px "";
+    vertical-align: middle;
+    padding-left: 10px; }
+#product ul {
+  margin-top: 8px;
+  padding: 1px 0;
+  background: #EEE;
+  width: 1200px; }
+  #product ul li {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 390px;
+    margin: 1px 0 0 1px;
+    background: #FFF; }
+    #product ul li:hover img {
+      transform: scale(1.05); }
+    #product ul li a {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      text-decoration: none;
+      cursor: pointer;
+      overflow: hidden; }
+      #product ul li a img {
+        display: block;
+        width: 230px;
+        height: 200px;
+        margin: 45px auto 0;
+        transition: transform .5s; }
+      #product ul li a p.title {
+        width: 250px;
+        height: 36px;
+        margin: 15px auto 5px;
+        overflow: hidden;
+        font: 12px/36px "";
+        word-break: break-all; }
+      #product ul li a p.price {
+        float: left;
+        margin-left: 43px;
+        color: #F60;
+        font: 700 16px/18px ""; }
+      #last .last-l{width: 1200px;margin: 0 auto;}
+#last .last-l ul{float: left;}
+#last .last-l img{float: right;margin-top: 14px;}
+#last .last-l ul li{float: left;margin-top:10px ;}
+#last .last-l ul li img{float: left;}
+#last .last-l ul li p{width: 100px;margin-right: 15px;}

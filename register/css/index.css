@@ -1,0 +1,210 @@
+header {
+  background: #fff; }
+  header .content {
+    width: 996px;
+    margin: 0 auto; }
+    header .content img {
+      margin: 18px 0 20px 0;
+      float: left;
+      cursor: pointer; }
+    header .content p {
+      font-size: 24px;
+      margin: 44px 0 30px 40px;
+      float: left;
+      font-weight: 700; }
+
+section {
+  height: 66px; }
+  section .box {
+    width: 996px;
+    margin: 0 auto; }
+    section .box .box1 {
+      height: 38px;
+      width: 150px;
+      border: 1px solid #E6E6E6;
+      border-bottom: none;
+      border-top: none;
+      float: left;
+      margin-left: 50px;
+      background: #FFFFFF;
+      position: relative;
+      top: 27px;
+      border-top: 2px solid #cc0000; }
+    section .box .box2 {
+      height: 38px;
+      width: 150px;
+      border: 1px solid #E6E6E6;
+      float: left;
+      margin-left: 5px;
+      position: relative;
+      background: #f3f3f3;
+      top: 27px; }
+    section .box p {
+      float: right;
+      margin-top: 44px; }
+      section .box p i {
+        color: #006699; }
+
+article .zhuche {
+  width: 996px;
+  margin: 0 auto;
+  border: 1px solid #E6E6E6; }
+  article .zhuche form .form1 {
+    margin: 40px 0 0 94px; }
+    article .zhuche form .form1 label {
+      float: left;
+      display: block;
+      height: 34px;
+      line-height: 34px; }
+    article .zhuche form .form1 p {
+      float: left;
+      border: 1px solid #E6E6E6; }
+      article .zhuche form .form1 p input {
+        width: 294px;
+        height: 34px;
+        border: none;
+        float: left; }
+      article .zhuche form .form1 p i {
+        line-height: 34px;
+        float: left;
+        display: none; }
+    article .zhuche form .form1 span {
+      width: 370px;
+      height: 34px;
+      border: 1px solid #E6E6E6;
+      float: left;
+      line-height: 34px;
+      margin-left: 5px;
+      display: none; }
+  article .zhuche form .form2 {
+    margin: 26px 0 0 80px;
+    position: relative; }
+    article .zhuche form .form2 p {
+      float: left; }
+    article .zhuche form .form2 input {
+      width: 294px;
+      height: 34px; }
+    article .zhuche form .form2 .pwdx {
+      position: absolute;
+      top: 34px;
+      left: 254px; }
+      article .zhuche form .form2 .pwdx i {
+        display: block;
+        float: left; }
+      article .zhuche form .form2 .pwdx a {
+        display: block;
+        float: left;
+        width: 15px;
+        height: 15px;
+        background: #CCCCCC;
+        margin-right: 3px; }
+  article .zhuche form .form3 {
+    margin: 26px 0 0 80px; }
+    article .zhuche form .form3 label {
+      float: left;
+      display: block;
+      height: 34px;
+      line-height: 34px; }
+    article .zhuche form .form3 p {
+      float: left;
+      border: 1px solid #E6E6E6;
+      background: #ebebe4; }
+      article .zhuche form .form3 p input {
+        width: 294px;
+        height: 34px;
+        border: none;
+        float: left;
+        background: #ebebe4; }
+      article .zhuche form .form3 p i {
+        line-height: 34px;
+        float: left;
+        display: none; }
+    article .zhuche form .form3 span {
+      width: 100px;
+      height: 34px;
+      border: 1px solid #E6E6E6;
+      float: left;
+      line-height: 34px;
+      margin-left: 5px;
+      display: none; }
+  article .zhuche form .form4 {
+    margin: 26px 0 0 80px; }
+    article .zhuche form .form4 label {
+      float: left;
+      display: block;
+      height: 34px;
+      line-height: 34px; }
+    article .zhuche form .form4 p {
+      float: left;
+      border: 1px solid #E6E6E6; }
+      article .zhuche form .form4 p input {
+        width: 294px;
+        height: 34px;
+        border: none;
+        float: left; }
+      article .zhuche form .form4 p i {
+        line-height: 34px;
+        float: left;
+        display: none; }
+    article .zhuche form .form4 span {
+      width: 100px;
+      height: 34px;
+      border: 1px solid #E6E6E6;
+      float: left;
+      line-height: 34px;
+      margin-left: 5px;
+      display: none; }
+  article .zhuche form .form5 {
+    margin: 26px 0 0 80px; }
+    article .zhuche form .form5 input {
+      width: 294px;
+      height: 34px; }
+  article .zhuche form .form6 {
+    margin: 26px 0 0 62px; }
+    article .zhuche form .form6 a {
+      display: block;
+      float: left;
+      width: 74;
+      height: 37px;
+      margin-right: 10px; }
+    article .zhuche form .form6 input {
+      width: 130px;
+      height: 34px;
+      float: left; }
+    article .zhuche form .form6 i {
+      display: block;
+      float: left;
+      width: 104px;
+      height: 37px;
+      border: 1px solid #E6E6E6;
+      margin-left: 10px; }
+  article .zhuche form .form7 {
+    margin: 26px 0 0 56px; }
+    article .zhuche form .form7 input {
+      width: 294px;
+      height: 34px; }
+  article .zhuche form .form8 {
+    margin: 32px 0 30px 150px;
+    width: 294px;
+    height: 34px;
+    background: #FF5757;
+    color: #FFFFFF; }
+
+#last .last-l {
+  width: 996px;
+  margin: 0 auto; }
+  #last .last-l ul {
+    float: left; }
+    #last .last-l ul li {
+      float: left;
+      margin-top: 10px; }
+      #last .last-l ul li img {
+        float: left; }
+      #last .last-l ul li p {
+        width: 100px;
+        margin-right: 15px; }
+  #last .last-l img {
+    float: right;
+    margin-top: 14px; }
+
+/*# sourceMappingURL=index.css.map */

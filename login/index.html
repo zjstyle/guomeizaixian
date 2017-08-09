@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/common.js"></script>
+		<script src="js/jq.js"></script>
+		<script>
+		  window.onload=function(){
+			$(".sweeplt").click(function(){
+				$(".logn-center1").show();
+				$(".logn-center2").hide();
+				
+			});
+			
+			$(".sweeplt2").click(function(){
+				$(".logn-center1").hide();;
+				$(".logn-center2").show();
+				
+			});  
+		    $(".more").addClass('bg1'); // 初始化时添加背景1
+		    $(".more").click(function() {
+		    	$(".logn-bottom2").toggle();
+		        $(this).toggleClass('bg1').toggleClass('bg2');
+		    });
+		    
+		    
+            $(".logn-center2-last").click(function() {
+				//console.log($(".user").val(), $(".pass").val());
+//				$.ajax({
+//					type: "POST",
+//					url: "php/login.php",
+//					data: "userword=" + $(".shouji").val() + "&password=" + $(".pwd").val(),
+//					success: function(msg) {
+//						var msg=JSON.parse(msg);
+//						
+//						if(msg){
+//							
+//							window.location.href="index.html";													
+//						}
+//						else{
+//							
+//						}
+//					}
+//				});
+            
+			var str = getCookie("user-pass");
+			var arr = JSON.parse(str);
+			
+			// arr.map(function(item,index){})
+			
+			var check =false;
+			for(var i=0;i<arr.length;i++){
+				if($("#user-name").val() == arr[i].name && $("#pass-word").val()==arr[i].value){
+				 check=true;
+					
+				}
+			}
+			
+			
+			if(check){
+				location.href="../home/home.html";
+			}else{
+				alert("输入有误")
+			}
+		/*if($("#user-name").val() == arr[0].name && $("#pass-word").val()==arr[0].value){
+				
+				
+				
+				//window.location.href="../home/home.html";	
+		}*/
+ });
+ 
+			
+			//arr[0]
+//			console.log(arr[0]);
+//			console.log(arr[0].name,);
+//			console.log(arr[0].value);
+			
+             //if( $('#user-name').val() == )
+              
+				
+		
+			
+			
+		  
+		
+	}
+	
+        </script>
+	</head>
+	<body>
+		 <header>
+		 	<div class="content clear">
+		 	<a>
+		 	 <img src="images/用户登录-国美在线.png" />
+		 	</a>	
+		 	 <p>欢迎登入</p>
+		 	 <div class="content-right"> 
+		 	  <img src="images/t1.png" />
+		 	  <i>我想对“登入”提点意见</i>
+		 	 </div>
+		 	</div>
+		 	</header>
+		 	<section >
+		 		<div class="selcontent">
+		 		 <div class="logn">
+		 		 	<div class="logn-top valign">
+		 		 		<p class="p1 sweeplt" ><a href="#" >扫码登录 </a><span>|</span></p>
+		 		 		<p class="sweeplt2">帐户登录</p>
+		 		 	</div>
+		 		 	
+		 		 	<div class="logn-center clear" >
+		 		 		<div class="logn-center1 valign" style="display: none;">
+			 		 		<dl>
+			 		 			<dt><img src="images/erwema.png"/></dt>
+			 		 			<dd><a>打开手机</a><a class="te">国美plus</a><span>|</span><a class="te">国美在线</a></dd>
+			 		 			
+			 		 		</dl>
+			 		 		<p>扫一扫登录</p>
+			 		 		<p class="te"><a href="../register/register.html">免费注册</a></p>
+		 		 		</div>
+		 		 		
+		 		 		<div class="logn-center2 clear">
+		 		 			<input type="text" placeholder="手机号码/用户名/邮箱/门店会员卡号" id="user-name" class="shouji"/>
+		 		 			<input type="password" placeholder="密码" class="pwd" id="pass-word"/>
+		 		 			<div class="logn-center2-c clear">
+		 		 				<div class="logn-center2-c-l clear">
+		 		 					<input type="checkbox" class="an"/>		 		 				
+		 		 					<i>自动登入</i>
+		 		 				</div>
+		 		 				
+		 		 				<div class="logn-center2-c-r">
+		 		 					<a>忘记密码</a><span>|</span><a id="register-l" ><a href="../register/register.html">免费注册</a></a>
+		 		 				</div>
+		 		 			</div>
+		 		 			<div class="logn-center2-last valign">
+		 		 				登&nbsp;录
+		 		 			</div>
+		 		 		</div>
+		 		 		
+		 		 	</div>
+		 		 	
+		 		 	<div class="logn-bottom">
+		 		 		<a>门店会员首次登入</a><span>|</span><a>QQ</a><span>|</span><a>微信</a><span>|</span><a>微博</a><span>|</span><a>美付宝</a><a class="more bg1"></a>
+		 		 	</div>
+		 		 	<div class="logn-bottom2 " style="display: none;">
+		 		 		<a>百度</a><span>|</span><a>网易</a><span>|</span><a>人人</a><span>|</span><a>360</a><span>|</span><a>急信通</a><span>|</span><a>支付宝</a>
+		 		 	</div>
+		 		 </div>
+		 		</div>
+		 	</section>
+		 	
+		 	<div id="foot">
+		 			<div class="foot1" style="width: 996px;margin: 0 auto;border-bottom: 1px solid #e6e6e6;">
+		 		<p style="margin: 40px 0 5px 0; color: #666666;">
+		 			<a>国美集团</a> <a>多边金都</a> <a>国之美</a> <a>关于国美在线</a> <a>加入我们</a> <span>|</span> <a>品牌大全</a> <a>商品专题</a> <a>批发大全</a> <a>热词搜索</a>
+		 		</p>
+		 		<p style="color: #666666;margin: 5px 0 5px 0;"> <a>友情链接</a> <a>风险检测</a> <span>|</span> <a>销售联盟</a> <a>商家注入</a> </p>
+		 		<i style="display: block;color: #999999;margin: 5px 0 5px 0;">国美在线电子商务有限公司  办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区  客服电话:4008708708  |  本公司游戏产品适合18岁以上成年人使用</i>
+		 		<i style="display: block;color: #999999;margin: 5px 0 10px 0;">©2000-2017&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;京公安网备11010502027062&nbsp;&nbsp;沪ICP备11009419号&nbsp;&nbsp;沪B2-20120004号</i>
+		 			</div>
+		 	</div>
+		 <div id="last">
+		 	<div class="last-l">
+		 		<ul>
+		 			<li>
+		 				<img src="images/t4.png"/>
+		 				<p>经营性网站</p>
+		 				<p>备案信息</p>
+		 			</li>
+		 			<li><img src="images/t5.png"/>
+		 				<p>可信网站</p>
+		 				<p>信用评价</p></li>
+		 			<li>
+		 				<img src="images/t6.png"/>
+		 				<p>诚信网站</p>
+		 				
+		 			</li>
+		 			<li>
+		 				<img src="images/t7.png"/>
+		 				<p>朝阳网站</p>
+		 				<p>警察</p>
+		 			</li>
+		 			<li>
+		 				<img src="images/t8.png"/>
+		 				<p>网购大家评</p>
+		 				
+		 			</li>
+		 		</ul>
+		 		<img src="images/tt.png" />
+		 	</div>
+		 	
+		 </div>
+	</body>
+	
+</html>
+		
+
+

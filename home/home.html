@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+        <script src="js/jquery-1.11.3.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="top" class="con clear">
+				<div class="top-l">
+					<img src="images/t1.png" />
+					<a>国美Plus</a><span>|</span>
+					<a class="te">国美会员</a>
+					<a href="../login/index.html">登入</a>
+					<a href="../register/register.html">注册</a>
+				</div>
+				<div class="top-r">
+					<a>我的订单</a>
+					<a class="te telt">
+						我的国美
+					</a>
+
+					<span>|</span>
+					<a>企业采购</a><i class="iconfont">&#xe68b;</i>
+					<a class="te">服务中心</a>
+					<a class="te">网站导航</a><span>|</span><i class="iconfont">&#xe600;</i>
+					<a class="te">手机国美</a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div id="search" class="con">
+				<img src="images/t3.png" />
+				<img src="images/t5.gif" class="img2" />
+
+				<div class="search-c clear">
+					<div class="search-l-l clear">
+						<div class="search-c-l">
+							<input type="text" placeholder="冰箱" />
+							<i class="iconfont"> &#xe61c;</i>
+						</div>
+						<input type="button" value="搜索" />
+						<ul class="clear">
+							<li>
+								<a class="te">830元抢家电</a>
+							</li>
+							<li>
+								<a>送20元现金</a>
+							</li>
+							<li>
+								<a>机油买1送5</a>
+							</li>
+							<li>
+								<a>魅族</a>
+							</li>
+							<li>
+								<a>买3免1</a>
+							</li>
+							<li>
+								<a>立省1500</a>
+							</li>
+							<li>
+								<a>199减100</a>
+							</li>
+							<li>
+								<a>男神诞生记</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="search-r">
+					<i class="iconfont">&#xe602;</i>
+					<span class="te valign">0</span>
+					<b></b>
+					<a>购物车空了</a>
+					<i class="iconfont">&#xe603;</i>
+				</div>
+			</div>
+		</section>
+		<nav>
+			<div id="nav1" class="con">
+				<ul>
+					<li>
+						<a>圈子</a>
+					</li>
+					<li>
+						<a>真划算</a>
+					</li>
+					<li>
+						<a>服装城</a>
+					</li>
+					<li>
+						<a>超市</a>
+					</li>
+					<li>
+						<a>电器城</a>
+					</li>
+					<li>
+						<a>国美电器</a>
+					</li>
+					<li>
+						<a>汽车</a>
+					</li>
+					<li>
+						<a>家装城</a>
+					</li>
+					<li>
+						<a>智能</a>
+					</li>
+					<li>
+						<a>管家</a>
+					</li>
+					<li>
+						<a>金融</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+		<article>
+			<img src="images/banner-l.jpg" class="img2" />
+			<div id="banner" class="con clear">
+				<div class="banner-left">
+				<span style="background: red; width:200px;height:30px;display: block;color: #FFFDEF;" class="valign">全部商品</span>
+		
+		<div id="partNav">
+
+			<ul>
+				<script id="nav" type="text/html">
+				
+					{{each navList as value}}
+					<li>
+						{{each value as item i}}
+						<a href="{{item.link}}">{{item.title}}</a>
+						{{if i != value.length-1}}
+						<span class="dl">/</span>
+						{{/if}}
+						
+						{{/each}}
+					</li>	
+					{{/each}}
+				</script>
+			</ul>							
+			<div class="navCon">
+				<script id="navCon" type="text/html">
+					<div class="navList clearfix">
+					<div class="part1">
+						<div class="channel clearfix">
+							{{each recm as value}}
+							<a href="{{value.link}}" target="_blank">{{value.tit}}<span>&gt;</span></a>
+							{{/each}}
+						</div>
+						<div class="detail">
+							{{each subNavLists as value1}}
+							<dl class="detail_item clearfix">
+								<dt><a href="" target="_blank">{{value1.subNavTit}}<span>&gt;</span></a></dt>
+								<dd>
+									{{each value1.subNavList as value11}}
+										<a href="" target="_blank">{{value11}}</a>
+									{{/each}}
+								</dd>
+							</dl>
+							{{/each}}
+				</script>
+			</div>
+		</div>
+			<script src="template.js" type="text/javascript" charset="utf-8"></script>
+			<script src="nav.js" type="text/javascript" charset="utf-8"></script>
+			</div>
+				<div class="swiper-container">
+							<div id="sliderBox">
+								<ul id="sliderList">
+									<li><img src="images/T1.jpg"></li>
+									<li><img src="images/T170xvB_JT1RCvBVdK.jpg"></li>
+									<li><img src="images/T1.jpg"></li>
+									<li><img src="images/T170xvB_JT1RCvBVdK.jpg"></li>
+									<li><img src="images/T1.jpg"> </li>
+								</ul>
+								<ul id="sliderNav">
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<div id="sliderBtns">
+									<div class="btn valign">&lt;</div>
+									<div class="btn valign">&gt;</div>
+								</div>
+							</div>
+				</div>
+				<div class="banner-right ">
+					
+					<div class="banner-right-t clear"> <h2>快讯</h2><span>更多</span></div>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					<p>特惠&nbsp;啦啦啦啦啦啦啦啦啦</p>
+					
+				</div>
+			</div>
+			<img src="images/banner-r.jpg" class="img3" />
+		</article>
+		<div id="content" class="clear">
+			<div class="con content-c clear" ">
+				<div class="dd clear">
+						<h3>淘&nbsp;实惠</h3>
+						<div class="dd-l">
+							<div class="dd-l-l">
+								<span class="valign">今日特卖</span>
+								<p>手机特惠</p>
+								<p>oppo A77现货2199元</p>
+								<img src="images/t5.png"  />
+							</div>
+							<div class="dd-l-r">
+								<div class="dd-l-r-t">
+									<span class="valign">团购抢购</span>
+									<p>维修组合工具9.9元</p>
+									<img src="images/t6.png"  />
+								</div>
+								<div class="dd-l-r-b">
+									<span class="valign">团购抢购</span>
+									<p>维修组合工具9.9元</p>
+									<img src="images/t6.png"  />
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="dd clear">
+						<h3>淘&nbsp;实惠</h3>
+						<div class="dd-l">
+							<div class="dd-l-l">
+								<span class="valign">今日特卖</span>
+								<p>手机特惠</p>
+								<p>oppo A77现货2199元</p>
+								<img src="images/t5.png"  />
+							</div>
+							<div class="dd-l-r">
+								<div class="dd-l-r-t">
+									<span class="valign">团购抢购</span>
+									<p>维修组合工具9.9元</p>
+									<img src="images/t6.png"  />
+								</div>
+								<div class="dd-l-r-b">
+									<span class="valign">团购抢购</span>
+									<p>维修组合工具9.9元</p>
+									<img src="images/t6.png"  />
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="dd te clear">
+						<h3>淘&nbsp;实惠</h3>
+						<div class="dd-l">
+							<div class="dd-l-l">
+								<span class="valign">今日特卖</span>
+								<p>手机特惠</p>
+								<p>oppo A77现货2199元</p>
+								<img src="images/t5.png"  />
+							</div>
+							<div class="dd-l-r">
+								<div class="dd-l-r-t">
+									<span class="valign">团购抢购</span>
+									<p>维修组合工具9.9元</p>
+									<img src="images/t6.png"  />
+								</div>
+								<div class="dd-l-r-b">
+									<span class="valign">团购抢购</span>
+									<p>维修组合工具9.9元</p>
+									<img src="images/t6.png"  />
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="LoutiNav">
+			<ul>
+				<li class="hover">1F <span>手机</span> </li>
+				<li>2F <span>美妆</span> </li>
+				<li>3F <span>手机</span> </li>
+				<li>4F <span>家电</span> </li>
+				<li>5F <span>数码</span> </li>
+				<li>6F <span>运动</span> </li>
+				<li>7F <span>居家</span> </li>
+				<li>8F <span>母婴</span> </li>
+				<li>9F <span>食品</span> </li>
+				<li>10F <span>图书</span> </li>
+				
+				
+			</ul>
+		</div>
+
+		<!--楼层内容开始-->
+
+		
+		<div id="main">
+			<div class="Louti clear" >
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div class="Louti clear" >
+				<div class="Louti-t">
+					<h4>2F&nbsp;电脑数码 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #ccff33;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+					<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #006633;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #6666cc;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #ff6600;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #ffff00;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #3333ff;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #ff00cc;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Louti" style="background: #669900;">
+				<div class="Louti-t">
+					<h4>1F&nbsp;手机通讯 </h4>
+					<ul>
+						<li><a>精选热卖</a></li>
+						<li><a>时尚新品</a></li>
+						<li><a>加价换购</a></li>
+						<li><a>创想低价</a></li>
+						<li><a>手机配件</a></li>
+						<li><a>夏日美肌</a></li>
+					</ul>
+				</div>
+				<div class="Louti-b clear">
+					<div class="Louti-b-l">
+						<p>魅族Pro7画屏之窗</p>
+						<i>新品上市&nbsp;尝鲜价2880元</i>
+						<img src="images/t7.png" />
+						<div class="te">
+							<a>手机</a><span>/</span><a>配件</a><span>/</span><a>充值</a><span>/</span><a>优惠卷</a>
+						</div>
+						<ul>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+							<li><a>魅族手机</a><a>潮3c</a><a>荣耀手机</a></li>
+						</ul>
+						
+					</div>
+					<div class="Louti-b-r">
+						<ul class="clear">
+							
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							
+						</ul>
+						<ul class="clear">
+								<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+									<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+							<li style="float: left;">
+								<a href="../product list/productlist.html">
+								<img src="images/t8.png" style="padding:20px 30px;"/>
+								<a style=" display: block; margin: 30px 20px;">HTC虚拟眼镜套装VIVE-VR黑</a>
+								<a style="color: red;margin: 0 0 15px 20px;">￥6688.00</a>
+								</a>
+							</li>
+																				
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+		<div id="foot">
+		 			<div class="foot1" style="width: 1200px;margin: 0 auto;border-bottom: 1px solid #e6e6e6;">
+		 		<p style="margin: 40px 0 5px 0; color: #666666;">
+		 			<a>国美集团</a> <a>多边金都</a> <a>国之美</a> <a>关于国美在线</a> <a>加入我们</a> <span>|</span> <a>品牌大全</a> <a>商品专题</a> <a>批发大全</a> <a>热词搜索</a>
+		 		</p>
+		 		<p style="color: #666666;margin: 5px 0 5px 0;"> <a>友情链接</a> <a>风险检测</a> <span>|</span> <a>销售联盟</a> <a>商家注入</a> </p>
+		 		<i style="display: block;color: #999999;margin: 5px 0 5px 0;">国美在线电子商务有限公司  办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区  客服电话:4008708708  |  本公司游戏产品适合18岁以上成年人使用</i>
+		 		<i style="display: block;color: #999999;margin: 5px 0 10px 0;">©2000-2017&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;京公安网备11010502027062&nbsp;&nbsp;沪ICP备11009419号&nbsp;&nbsp;沪B2-20120004号</i>
+		 			</div>
+		 	</div>
+	
+	
+		<div id="last">
+		 	<div class="last-l">
+		 		<ul>
+		 			<li>
+		 				<img src="images/l4.png"/>
+		 				<p>经营性网站</p>
+		 				<p>备案信息</p>
+		 			</li>
+		 			<li><img src="images/l5.png"/>
+		 				<p>可信网站</p>
+		 				<p>信用评价</p></li>
+		 			<li>
+		 				<img src="images/l6.png"/>
+		 				<p>诚信网站</p>
+		 				
+		 			</li>
+		 			<li>
+		 				<img src="images/l7.png"/>
+		 				<p>朝阳网站</p>
+		 				<p>警察</p>
+		 			</li>
+		 			<li>
+		 				<img src="images/l8.png"/>
+		 				<p>网购大家评</p>
+		 				
+		 			</li>
+		 		</ul>
+		 		<img src="images/ll.png" />
+		 	</div>
+		 	
+		 </div>
+
+	</body>
+			<!--楼层内容结束-->
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var flag = true;
+				<!--//滚动事件的处理程序-->
+				function scroll(){
+					//获取滚动条滚动的距离
+					var scrollTop = $(window).scrollTop();
+					//console.log(scrollTop);
+					//判断，让左边的楼层显示出来
+					
+					scrollTop > 1100 ? $("#LoutiNav").fadeIn(300) : $("#LoutiNav").fadeOut(300);
+					//滚动条滚动到相应区域时，对应楼层添加class->hover
+					$(".Louti").each(function(){
+						//console.log($(this).position().top);
+						//当内容区域显示一半时，开始添加类
+						if(scrollTop > $(this).offset().top - $(this).outerHeight()/2){
+							$("#LoutiNav li").eq($(this).index()).addClass("hover").siblings().removeClass("hover");							
+						}
+					})
+				}
+				$(window).scroll(function(){					
+					if(flag){
+						scroll();
+					}
+					
+				});					
+				$("#LoutiNav li:not(:last)").click(function(){
+					flag = false;
+					$(this).addClass("hover").siblings().removeClass("hover");
+					//窗口滚动条动画，滚动到楼层对应区域的位置
+					$("body,html").stop().animate({"scrollTop":$(".Louti").eq($(this).index()).offset().top},500,function(){
+						flag  = true;
+					});
+					
+				})
+				
+				$("#LoutiNav li:last").click(function(){
+					flag = false;
+					$("body,html").stop().animate({"scrollTop":0},500,function(){
+						flag  = true;
+					});
+				})
+				
+			})
+		</script>
+		<script type="text/javascript">		
+			(function($,undefined){
+				$.fn.slider = function(opts){
+					//defaults默认样式
+					var defaults = {
+						width:750,
+						height:450,
+						direction:"left",
+						interval:3000,
+						showNav:false,
+						showBtns:false
+					};
+					//opts自定义参数，options最终参数集合
+					var options = $.extend(true,{},defaults,opts);
+					
+					function Slider(options){
+						this.ele = $("#sliderBox");
+						this.lists = $("#sliderList");
+						this.nav = $("#sliderNav");
+						this.btns = $("#sliderBtns");
+						this.lists.find("li").eq(0).clone(true).appendTo(this.lists);
+						this.list = this.lists.find("li");
+						this.ele.css({"width":options.width,"height":options.height});
+						this.list.css({"width":options.width,"height":options.height});
+						this.list.find("img").css({"width":options.width,"height":options.height});
+						this.btns.find(".btn").css("top",((options.height/2)-20));
+						
+						switch(options.direction){
+							case "top":
+								this.topBottom();
+								break;
+							default:
+								this.leftRight();
+						}
+						if(options.showNav){
+							this.nav.show();
+						}
+						if(options.showBtns){
+							this.btns.show();
+						}
+					}
+				
+					Slider.prototype.leftRight = function(){
+						this.lists.css({"width":options.width*this.list.length,"height":options.height});
+						this.list.css("float","left");
+						this.timer = setInterval(move,options.interval);
+						var _this = this;
+						var index = 0;
+						function move(){
+							index++;
+							if(index == _this.list.length){
+								index = 1;
+								_this.lists.css("left",0);
+							}
+							if(index==_this.list.length-1){
+								_this.nav.find("li").eq(0).addClass("hover").siblings().removeClass("hover");
+							
+							}else{
+								_this.nav.find("li").eq(index).addClass("hover").siblings().removeClass("hover");	
+							}
+							_this.lists.stop().animate({"left":-index*options.width},1000,function(){
+	
+							});
+							
+						}
+						
+						this.nav.find("li").hover(function(){
+							clearInterval(_this.timer);
+							index = $(this).index()-1;
+							move();
+						},function(){
+							_this.timer = setInterval(move,3000);
+						});
+						
+						this.btns.find(".btn").eq(0).click(function(){
+							clearInterval(_this.timer);
+							move();
+							_this.timer = setInterval(move,3000);
+						})
+						this.btns.find(".btn").eq(1).click(function(){
+							clearInterval(_this.timer);
+							console.log(index);
+							if(index==0){
+								index = _this.list.length-3;
+								_this.lists.css("left",(-(_this.list.length-1))*options.width);
+							}else{
+								index = index -2;
+							}
+							move();
+							_this.timer = setInterval(move,3000);
+						})
+					}
+					
+					//上下轮播
+					Slider.prototype.topBottom = function(){
+						//this.lists.css({"height":options.height*this.list.length,"height":options.height});
+						//this.list.css("float","left");
+						this.timer = setInterval(move,options.interval);
+						var _this = this;
+						var index = 0;
+						function move(){
+							index++;
+							if(index == _this.list.length){
+								index = 1;
+								_this.lists.css("top",0);
+							}
+							if(index==_this.list.length-1){
+								_this.nav.find("li").eq(0).addClass("hover").siblings().removeClass("hover");
+							
+							}else{
+								_this.nav.find("li").eq(index).addClass("hover").siblings().removeClass("hover");	
+							}
+							_this.lists.stop().animate({"top":-index*options.height},1000,function(){
+	
+							});
+							
+						}
+						
+						this.nav.find("li").hover(function(){
+							clearInterval(_this.timer);
+							index = $(this).index()-1;
+							move();
+						},function(){
+							_this.timer = setInterval(move,3000);
+						});
+						
+					}
+					new Slider(options);
+					return this;
+				}
+			})(jQuery)
+			
+			//1调用-上下轮播
+		//	$("#sliderBox").slider({direction:"top",showNav:true,showBtns:false});
+			//2调用-左右轮播
+			$("#sliderBox").slider({showNav:true,showBtns:true});
+		</script>
+
+</html>
