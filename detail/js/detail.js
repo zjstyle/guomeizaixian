@@ -1,7 +1,7 @@
 $(function(){
 	$.ajax({
 		type:"get",
-		url:"json/detail.json",
+		url:"detail/json/detail.json",
 		async:true,
 		success:function(data){
 			var str = location.search;
@@ -15,7 +15,7 @@ $(function(){
 					$(".price .pp").find(".bb").html(data[i].price);
 					
 					for(var j in data[i].src) {
-						html += "<img src='" + data[i].src[j] + "'/>";						
+						html += "<img src=' " + data[i].src[j] + "'/>";						
 					}
 					$(".middle-img, .big-img,.small-img").append(html);
 				}	

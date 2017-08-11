@@ -4,13 +4,13 @@ header{background: #f8f8f8; height: 30px;}
 header #top .top-l {float: left;}
 header #top .top-l img{margin-top: 6px;float: left;}
 header #top .top-l a{display: block; float: left;margin:0 5px ;line-height: 30px;color: #888888;}
-header #top .top-l a.te{background: url(../images/t2.png) no-repeat right; padding-right: 10px;}
+header #top .top-l a.te{background: url(home/images/t2.png) no-repeat right; padding-right: 10px;}
 header #top .top-l span{display: block;float: left;line-height: 30px;color: #e6e6e6;}
 header #top .top-r {float: right;}
 header #top .top-r a{display: block; float: left;margin:0 5px ;line-height: 30px;color: #888888;}
 header #top .top-r i{display: block; float: left;line-height: 30px;color: red;}
 header #top .top-r span{display: block;float: left;line-height: 30px;color: #e6e6e6;}
-header #top .top-r a.te{background: url(../images/t2.png) no-repeat right; padding-right: 10px;}
+header #top .top-r a.te{background: url(home/images/t2.png) no-repeat right; padding-right: 10px;}
 /*section*/
 section #search{height: 100px;}
 section #search img{float: left;margin-top:30px ;}
@@ -29,7 +29,7 @@ section #search .search-c .search-c-l i{line-height: 30px;}
 section #search .search-c input{float: left; width: 72px; height: 34px;background: #d7000f;border: 0;}
 section #search .search-r {float: right; width: 140px; height: 34px;margin-top: 34px;position: relative;}
 section #search .search-r span{background: #a5a5a5; width:20px;height: 20px;position: absolute;top: -20px;left: 10px;color: #fff;}
-section #search .search-r b{width: 4px;height: 5px;display: block;background: url(../images/t4.png);float: left;position: absolute;left: 15px;top: 0;}
+section #search .search-r b{width: 4px;height: 5px;display: block;background: url(images/t4.png);float: left;position: absolute;left: 15px;top: 0;}
 /*nav*/
 nav ul{height: 40px;margin-left: 200px;}
 nav ul li {float: left;}

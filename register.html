@@ -4,11 +4,11 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
-	<link rel="stylesheet" href="css/public.css" />
-	<link rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" href="../iconfont/iconfont.css" />
-	<script src="js/common.js"></script>
-	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="register/css/public.css" />
+	<link rel="stylesheet" href="register/css/index.css" />
+	<link rel="stylesheet" href="iconfont/iconfont.css" />
+	<script src="register/js/common.js"></script>
+	<script src="register/js/jquery.js"></script>
 	<script type="text/javascript">
 		//document.cookie = "name=john;path=/";
 	</script>
@@ -16,7 +16,7 @@
 		<header >
 		 	<div class="content clear">
 			
-			 	 <img src="images/用户登录-国美在线.png" />
+			 	 <img src="register/images/用户登录-国美在线.png" />
 			
 			 	 <p>欢迎登入</p>		 	 
 		 	</div>
@@ -103,30 +103,30 @@
 		 	<div class="last-l">
 		 		<ul>
 		 			<li>
-		 				<img src="images/t4.png"/>
+		 				<img src="register/images/t4.png"/>
 		 				<p>经营性网站</p>
 		 				<p>备案信息</p>
 		 			</li>
-		 			<li><img src="images/t5.png"/>
+		 			<li><img src="register/images/t5.png"/>
 		 				<p>可信网站</p>
 		 				<p>信用评价</p></li>
 		 			<li>
-		 				<img src="images/t6.png"/>
+		 				<img src="register/images/t6.png"/>
 		 				<p>诚信网站</p>
 		 				
 		 			</li>
 		 			<li>
-		 				<img src="images/t7.png"/>
+		 				<img src="register/images/t7.png"/>
 		 				<p>朝阳网站</p>
 		 				<p>警察</p>
 		 			</li>
 		 			<li>
-		 				<img src="images/t8.png"/>
+		 				<img src="register/images/t8.png"/>
 		 				<p>网购大家评</p>
 		 				
 		 			</li>
 		 		</ul>
-		 		<img src="images/tt.png" />
+		 		<img src="register/images/tt.png" />
 		 	</div>
 		 	
 		 </div>
@@ -218,18 +218,16 @@
     	var flag = true;
     	if(flag){
     		var str = getCookie("user-pass");
-    		var str = location.search;
-			var xx = str.split("=");
-			var proID = xx[1];
+    		
     		if(str == undefined) {
 						var obj = [];
 					} else {
-						var obj = JSON.parse(str);
+					var	obj = JSON.parse(str);
 					}
 					obj.push({"name": $("#oinput").val() ,	"value": $(".oinput2").val()});
 					var objToStr = JSON.stringify(obj);
 					setCookie("user-pass", objToStr, 7);
-    		window.location.href="../login/index.html";
+    		window.location.href="index.html";
     	}
     });
        

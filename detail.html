@@ -4,21 +4,21 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
-	<link rel="stylesheet" href="css/public.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/jquary.js"></script>
-		<script src="js/detail.js"></script>
-		<script src="js/common.js"></script>
+	<link rel="stylesheet" href="detail/css/public.css" />
+		<link rel="stylesheet" href="detail/css/style.css" />
+		<script src="detail/js/jquary.js"></script>
+		<script src="detail/js/detail.js"></script>
+		<script src="detail/js/common.js"></script>
 	<body>
 	 <header>
 	 	<header>
 			<div id="top" class="con clear">
 				<div class="top-l">
-					<img src="images/t1.png" />
+					<img src="detail/images/t1.png" />
 					<a>国美Plus</a><span>|</span>
 					<a class="te">国美会员</a>
-					<a href="../login/index.html">登入</a>
-					<a href="../register/register.html">注册</a>
+					<a href="index.html">登入</a>
+					<a href="register.html">注册</a>
 				</div>
 				<div class="top-r">
 					<a>我的订单</a>
@@ -37,8 +37,8 @@
 	 </header>
 	 <section>
 			<div id="search" class="con">
-				<img src="images/t3.png" />
-				<img src="images/t5.gif" class="img2" />
+				<img src="detail/images/t3.png" />
+				<img src="detail/images/t5.gif" class="img2" />
 
 				<div class="search-c clear">
 					<div class="search-l-l clear">
@@ -193,30 +193,30 @@
 		 	<div class="last-l">
 		 		<ul>
 		 			<li>
-		 				<img src="images/l4.png"/>
+		 				<img src="detail/images/l4.png"/>
 		 				<p>经营性网站</p>
 		 				<p>备案信息</p>
 		 			</li>
-		 			<li><img src="images/l5.png"/>
+		 			<li><img src="detail/images/l5.png"/>
 		 				<p>可信网站</p>
 		 				<p>信用评价</p></li>
 		 			<li>
-		 				<img src="images/l6.png"/>
+		 				<img src="detail/images/l6.png"/>
 		 				<p>诚信网站</p>
 		 				
 		 			</li>
 		 			<li>
-		 				<img src="images/l7.png"/>
+		 				<img src="detail/images/l7.png"/>
 		 				<p>朝阳网站</p>
 		 				<p>警察</p>
 		 			</li>
 		 			<li>
-		 				<img src="images/l8.png"/>
+		 				<img src="detail/images/l8.png"/>
 		 				<p>网购大家评</p>
 		 				
 		 			</li>
 		 		</ul>
-		 		<img src="images/ll.png" />
+		 		<img src="detail/images/ll.png" />
 		 	</div>
 		 	
 		 </div>
@@ -242,7 +242,7 @@
 				obj.push({"soure":$(".count").val(),"ID":proID});
 				var objToStr = JSON.stringify(obj);
 				setCookie("user", objToStr, 7);
-				window.location.href="../shopping/shopping.html"
+				window.location.href="shopping.html"
 				
 			}
 			

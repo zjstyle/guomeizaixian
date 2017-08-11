@@ -6,7 +6,7 @@ $(function(){
 	
 	$.ajax({
 		type:"get",
-		url:"json/detail.json",
+		url:"shopping/json/detail.json",
 		async:true,
 		success:function(data){
 			var str = getCookie("user");
@@ -19,7 +19,7 @@ $(function(){
 			     var item = getData(arr[i].ID,data);
 			     console.log(item);
 			   
-			      html = "<li><a><img src='" +item.src +"' /></a><p>"+item.title+"</p><b>"+item.price+"</b><i></i></li>";
+			      html = "<li><a><img src='" +item.src +"' /></a><p>"+item.title+"</p><b>"+item.price+"</b></li>";
 			     $("#content ul").append(html);
 			     
 			    

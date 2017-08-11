@@ -4,18 +4,18 @@
 		<meta charset="UTF-8">
 		<title></title>
 	</head>
-	<link rel="stylesheet" href="css/public.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="product list/css/public.css" />
+	<link rel="stylesheet" href="product list/css/style.css" />
+	<script src="product list/js/jquery.js"></script>
 	<body>
 		<header>
 			<div id="top" class="con clear">
 				<div class="top-l">
-					<img src="images/t1.png" />
+					<img src="product list/images/t1.png" />
 					<a>国美Plus</a><span>|</span>
 					<a class="te">国美会员</a>
-					<a href="../login/index.html">登入</a>
-					<a href="../register/register.html">注册</a>
+					<a href="login/index.html">登入</a>
+					<a href="register/register.html">注册</a>
 				</div>
 				<div class="top-r">
 					<a>我的订单</a>
@@ -66,30 +66,30 @@
 		 	<div class="last-l">
 		 		<ul>
 		 			<li>
-		 				<img src="images/l4.png"/>
+		 				<img src="product list/images/l4.png"/>
 		 				<p>经营性网站</p>
 		 				<p>备案信息</p>
 		 			</li>
-		 			<li><img src="images/l5.png"/>
+		 			<li><img src="product list/images/l5.png"/>
 		 				<p>可信网站</p>
 		 				<p>信用评价</p></li>
 		 			<li>
-		 				<img src="images/l6.png"/>
+		 				<img src="product list/images/l6.png"/>
 		 				<p>诚信网站</p>
 		 				
 		 			</li>
 		 			<li>
-		 				<img src="images/l7.png"/>
+		 				<img src="product list/images/l7.png"/>
 		 				<p>朝阳网站</p>
 		 				<p>警察</p>
 		 			</li>
 		 			<li>
-		 				<img src="images/l8.png"/>
+		 				<img src="product list/images/l8.png"/>
 		 				<p>网购大家评</p>
 		 				
 		 			</li>
 		 		</ul>
-		 		<img src="images/ll.png" />
+		 		<img src="product list/images/ll.png" />
 		 	</div>
 		 	
 		 </div>
@@ -100,7 +100,7 @@
 	//ajax动态加载
 	$.ajax({
 		type: "get",
-		url: "json/productlist.json",
+		url: "product list/json/productlist.json",
 		async: true,
 		dataType: "json",
 		success: function(data) {
@@ -110,7 +110,7 @@
 			var html = "";
 			//通过href中的search？来控制跳转
 			for(var i = 0; i < data.length; i++) {
-				html += "<li><a href='../detail/detail.html?id="+data[i].id+"' target='_blank' ><img src='" + data[i].src + "'/><p class='title'>" + data[i].title + "</p><p class='price'>" + data[i].price + "</p></a></li>";
+				html += "<li><a href='detail.html?id="+data[i].id+"' target='_blank' ><img src='" + data[i].src + "'/><p class='title'>" + data[i].title + "</p><p class='price'>" + data[i].price + "</p></a></li>";
 			}
 			$("#product ul").append(html);
 		}
