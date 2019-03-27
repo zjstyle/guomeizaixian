@@ -1,0 +1,21 @@
+webpack  4
+开发环境下：
+先用  npm install webpack  webpack-cli -d  本地安装
+本地安装完后有src 文件夹 文件夹中有一个index.js 
+然后开始打包  用npx webpack 打包 直接就输出一个dist文件  文件中有一个main.js (他是 通过 node-modle  中 bin的webpack.cmd 文件来打包的)
+
+@@ 手动配置webpack
+默认配置文件名字 webpack.config.js
+
+// webpack 是node 写出的  要用node的 写法
+let path =require('path'); //引入path
+
+module.exprots ={
+    mode: 'development', // 是模式默认两种 production （生产模式 压缩后的代码） development(开发模型:打包后之前的代码 不是压缩后的代码)
+    entry:'./src/index.js', //entry 是入口文件
+    output:{		  //出口文件
+    filename:'bundle.js',  //打包后的文件
+    path:path.resolve(__dirname,'build'),     //路径必须是一个绝对路径  要引入一个path文件  resolve 是解析把相对路径解析成相对路径 __dirname 指的是 当前目录下加一个dist目录 不加也可以
+ }}		
+ }
+ webpack.config.js 可以强制改 ，但他说 默认的  

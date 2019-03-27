@@ -1,0 +1,33 @@
+1.首先新建一个Cmponent.vue文件
+
+// Cmponent.vue
+<template>
+<div>
+我是组件
+</div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+div{
+font-size:40px;
+color:#fbb;
+text-align:center;
+}
+</style>
+2.其次在同一目录下建立index.js文件,在这个文件中使用install方法来全局注册该组件
+
+import component from './Cmponent.vue'
+const component = {
+install:function(Vue){
+Vue.component('component-name',component)
+} //'component-name'这就是后面可以使用的组件的名字，install是默认的一个方法
+
+}
+// 导出该组件
+export default component

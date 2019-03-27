@@ -1,0 +1,7 @@
+直接引入axios会报错
+		impore  axios from "axios"
+		vue.use (axios)
+		会报错，因为 axios 中 没有install
+		用法：
+		引入一个原型
+		vue.prototype.$http = axios;

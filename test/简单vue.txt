@@ -1,0 +1,184 @@
+vue-cli + vue-router + .....   全家桶
+
+	import Vue ..
+	import VueRouter  插件 
+
+	Vue.use(VueRouter);  安装
+
+自定义Vue插件
+
+	VueRouter:
+		组件:<router-link> / router-view /  组件属性 to active-class....
+		对象:VueRouter  / router route / push/replace/....
+------------------------------------------------------------------------------
+
+数据传递，流动，流向控制，存储
+
+	存储:  
+		临时：	cookie: expris  / seesionStorage / 存组件data里面 / 状态管理
+		永久、持久化:
+				cookie + time localstorage /   库
+	流动，流向控制，传递
+		读cookie/seesion/storage/库   
+		组件data数据 传递(父->子/子->父/丢给空对象(js/vue))
+		状态管理
+------------------------------------------------------------------------------
+状态管理
+	什么时候用： 打算开发中大型应用
+	集中式数据管理, 一出修改，多处使用
+
+	思维流程:
+										store.js
+				this.$store.commit('increment')	-> mutations
+				this.$store.dispatch('jia')		-> actions			
+			     mapActions											mapGetters
+			学生		代课老师		校长		 财务     版主任		学生
+		components - >  actions		->  mutations -> state  <- getters	<-	components
+			发送请求      处理			修改状态	 	
+						  业务逻辑		修改state			   读取state
+						  异步
+						  										$store.state <-  学生
+------------------------------------------------------------------------------
+mapActions/mapGetters  执行后， 返回来的是对象
+	对象:	{incremen:fn,decrement:fn,xx,xx}
+------------------------------------------------------------------------------
+this.$store.commit('increment',参数/负载/payload)
+this.$store.dispatch('increment',参数/负载/payload)
+
+const actions = {
+	increment:({store对象},参数)=>{}
+}
+
+------------------------------------------------------------------------------
+新闻客户端
+	1. 环境搭建(vue-cli +  vue-router + axios + vuex == 全家桶)
+	2. 项目分析(组件安排)
+		dist
+			|-...
+		data:
+			|-数据.json
+			....
+		src
+			|-assets
+				|-js
+				|-css
+				|-image
+			|-component
+				|-	navbar.vue / footbar.vue
+				|-	home.vue / follow.vue / column.vue / user.vue
+				|-  detail.vue / login.vue / reg.vue
+				|-	silder.vue / error.vue
+			|-filters
+				date.js
+				fillzero.js
+			|-loading
+				index.js
+				|-component
+					|-loading.vue
+			|-store
+				|-index.js
+				|-actions.js
+				|-mutations.js
+				|-getters.js
+				|-state.js
+				|-types.js
+			main.js
+			App.vue
+			router.config.js
+		package.json
+		webpack.config.js
+	3. 布局
+		a) 切图(需要设计稿)
+		b) UI库	(bootstrap/elelementUI pc端 / mintUI移动端)
+		c) html+css模板 移植 到 组件
+
+	4. 路由搭建(vue-router)
+
+	5. 数据交互(axios)
+
+	6. 非状态管理（控制导航显示)
+		this.$root.$data.根数据名;
+		this.$root.$data.根数据名=值
+
+	7. 状态管理
+		控制导航显示
+			home/follow/column   showNav|showFoot
+			login/reg/detail	 hideNav|hideFoot
+			user 				 hideNav|showFoot
+
+			组件事件  @click.native="事件名($event,参数)"
+	8. 路由监听、全局组件（loading)
+		路由监听:
+			watch:{
+			 	$route(to){
+			 		to.path 返回当前路由的地址
+			 	}
+			}
+
+	9. 动画、
+	拦截器: axios 中有一个 interceptors
+	//拦截器，统一配置相关插件，在处理流程中，做一个拦截操作
+/*axios.interceptors.request.use(function (config) {
+  // 显示loading
+  store.dispatch('showLoading');
+  return config;
+}, function (error) {
+  // Do something with request error
+  return Promise.reject(error);
+});
+
+// Add a response interceptor
+axios.interceptors.response.use(function (response) {
+  // loading消失
+  store.dispatch('hideLoading');
+  return response;
+}, function (error) {
+  // Do something with response error
+  return Promise.reject(error);
+});*/
+	10. 解决前后端服务器共存
+		大后端：
+			 nodejs + express + router + ejs		后端处理路由，渲染页面
+			 html + css + js效果 
+		大前端：
+			Vue-cli + vue-router + axios/resource 	前端处理路由
+				this.$http(url:接口,params:{keyvalue})
+			nodeJs + express 
+				负责:写接口,处理后端到库，send（库数据) json() write+end()
+		前后端分离：
+			跨域：需要后台允许的， 设置头
+				a)  逐条设置  
+					res.setHeader('Access-Control-Allow-Origin', req.headers.origin)
+					问题：每一个路由都要设置
+				b)  统一设置(中间件cors)
+					app.use(cors({
+					  "origin": ['http://localhost:8080'],
+					  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+					  allowedHeaders:['Content-Type', 'Authorization']
+					}));
+
+
+	11. 跨源凭证
+		ajax跨源请求数据，默认不提供凭据(cookie,http认证，客户端SSL证明)
+		流程：假设
+			vue->用户中心->vue发送请求->nodejs响应判断无session,返回给vue->vue路由切换到登录页面->vue发送登录请求->nodejs响应，兜库，种cookie(需要凭证)，返回用户数据->vue 路由跳转，传递接受到的数据给 "用户中心组件"
+
+			切换到其他路由，再切回来（用户中心)->vue发送请求->nodejs响应判断有session,返回vue的是 已登录|兜库拿用户数据
+		使用携带跨源凭据|反向跨域
+			前端: 携带
+				a)逐条允许 axios
+					withCredentials: true,//携带跨源凭证
+				b)
+			后端：接受、运行携带
+				a) 逐条允许
+					res.setHeader('Access-Control-Allow-Credentials', true);
+				b) 中间件统一配置(cors)
+
+
+------------------------------------------------------------------------------------
+
+周1：  完成模板移植
+周2：  路由、数据交互（数据文件）
+周3：  状态管理、动画、拦截器
+周4：  建库，搭服务器（解决前后端服务器共存）
+周5：  mintUI + vue 布局要完事
